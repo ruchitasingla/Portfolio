@@ -3,46 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ruchita Singla | Python, ML & Data Analytics</title>
-<meta name="description" content="Portfolio of Ruchita Singla, B.Tech CSE graduate focused on Python, machine learning and data analytics.">
+<title>Ruchita Singla | Machine Learning and MLOps Engineer</title>
+<meta name="description" content="Portfolio of Ruchita Singla, B.Tech CSE graduate who builds machine learning models with Python and Scikit-learn and ships them with Jenkins, GitHub Actions, Docker, AWS, Prometheus and Grafana.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#150d26; --panel:#1f1436; --line:#3a2a5e;
+  --bg:#150d26; --panel:#1f1436; --panel2:#271a45; --line:#3a2a5e;
   --pink:#ff8fc7; --lav:#b9a4ff; --mint:#8ff5d0; --text:#f6e9ff; --muted:#b8a6d6;
   --sans:'Sora',system-ui,sans-serif; --mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;overflow-x:hidden;
   background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
   background-size:48px 48px;background-position:-1px -1px}
-body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 15% 10%,rgba(255,143,199,.22),transparent 55%),radial-gradient(ellipse at 90% 60%,rgba(185,164,255,.2),transparent 55%),linear-gradient(var(--bg),rgba(21,13,38,.88));z-index:-1}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 15% 10%,rgba(255,143,199,.2),transparent 55%),radial-gradient(ellipse at 90% 60%,rgba(185,164,255,.18),transparent 55%),linear-gradient(var(--bg),rgba(21,13,38,.9));z-index:-1}
 a{color:inherit;text-decoration:none}
 a:focus-visible,button:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-section{padding:72px 0}
-h2{font-size:1.9rem;font-weight:800;margin-bottom:28px;display:flex;align-items:center;gap:12px}
-h2 span{font-family:var(--mono);color:var(--pink);font-weight:600}
-h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:68px 0}
+h2{font-size:1.8rem;font-weight:800;margin-bottom:10px}
+.lead{color:var(--muted);max-width:60ch;margin-bottom:32px}
 
 /* nav */
-nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:rgba(21,13,38,.7);border-bottom:1px solid var(--line)}
+nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:rgba(21,13,38,.75);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
 .logo{font-family:var(--mono);font-weight:600;color:var(--pink)}
-nav ul{display:flex;gap:22px;list-style:none;font-size:.9rem;color:var(--muted)}
+nav ul{display:flex;gap:24px;list-style:none;font-size:.9rem;color:var(--muted)}
 nav ul a:hover{color:var(--pink)}
 
 /* hero */
-.hero{padding:80px 0 60px}
+.hero{padding:76px 0 48px}
 .hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.hero .statwrap{display:block}
 .pill{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.8rem;padding:6px 14px;border:1px solid var(--mint);color:var(--mint);border-radius:99px;margin-bottom:22px}
 .pill i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 10px var(--mint)}
-h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.08;font-weight:800;letter-spacing:-.02em}
-h1 em{font-style:normal;background:linear-gradient(100deg,var(--pink),var(--lav));-webkit-background-clip:text;background-clip:text;color:transparent}
-.sub{color:var(--muted);margin:18px 0 28px;max-width:46ch}
+h1{font-size:clamp(2.2rem,5.4vw,3.6rem);line-height:1.1;font-weight:800;letter-spacing:-.02em}
+h1 .grad{background:linear-gradient(100deg,var(--pink),var(--lav));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--muted);margin:18px 0 28px;max-width:48ch}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
 .btn{padding:12px 22px;border-radius:14px;font-weight:600;font-size:.92rem;border:1px solid var(--pink);transition:.2s}
 .btn.main{background:var(--pink);color:#2a0f3d}
@@ -50,59 +50,80 @@ h1 em{font-style:normal;background:linear-gradient(100deg,var(--pink),var(--lav)
 .btn.ghost:hover{background:rgba(255,143,199,.12)}
 
 /* terminal */
-.term{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.45),0 0 0 6px rgba(255,143,199,.06);overflow:hidden;font-family:var(--mono);font-size:.82rem}
+.term{background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.45),0 0 0 6px rgba(255,143,199,.06);overflow:hidden;font-family:var(--mono);font-size:.8rem}
 .term .bar{display:flex;gap:7px;padding:12px 16px;border-bottom:1px solid var(--line);align-items:center}
 .term .bar b{width:11px;height:11px;border-radius:50%;background:var(--pink)}
 .term .bar b:nth-child(2){background:var(--lav)}.term .bar b:nth-child(3){background:var(--mint)}
 .term .bar span{margin-left:auto;color:var(--muted);font-size:.74rem}
-.term pre{padding:18px;white-space:pre-wrap;min-height:250px;color:var(--text)}
+.term pre{padding:18px;white-space:pre-wrap;min-height:290px;color:var(--text);line-height:1.75}
 .k{color:var(--pink)}.s{color:var(--mint)}.c{color:var(--muted)}.f{color:var(--lav)}
 .caret{display:inline-block;width:8px;height:1em;background:var(--mint);vertical-align:-2px;animation:blink 1s steps(2) infinite}
 @keyframes blink{50%{opacity:0}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.stat b{display:block;font-size:1.7rem;font-weight:800;color:var(--mint);line-height:1.2}
+.stat span{color:var(--muted);font-size:.84rem}
+
+/* projects */
+.projects{display:grid;gap:24px}
+.proj{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:30px;display:grid;grid-template-columns:1.1fr 1fr;gap:30px;transition:border-color .2s}
+.proj:hover{border-color:var(--pink)}
+.proj .date{font-family:var(--mono);font-size:.75rem;color:var(--mint)}
+.proj h3{font-size:1.4rem;margin:6px 0 4px}
+.proj .kind{color:var(--pink);font-size:.9rem;margin-bottom:14px}
+.proj ul{list-style:none;color:var(--muted);font-size:.93rem}
+.proj li{padding-left:18px;position:relative;margin-bottom:8px}
+.proj li::before{content:">";position:absolute;left:0;color:var(--pink);font-family:var(--mono)}
+.proj li strong{color:var(--text);font-weight:600}
+.side{display:flex;flex-direction:column;gap:16px;background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:20px}
+.side h4{font-size:.85rem;color:var(--lav);font-weight:600}
+.stages{list-style:none;display:flex;flex-direction:column;position:relative;margin-left:6px}
+.stages li{font-family:var(--mono);font-size:.78rem;padding:4px 0 4px 22px;position:relative;color:var(--text)}
+.stages li::before{content:"";position:absolute;left:0;top:11px;width:9px;height:9px;border-radius:50%;background:var(--mint)}
+.stages li::after{content:"";position:absolute;left:4px;top:20px;bottom:-11px;width:1px;background:var(--line)}
+.stages li:last-child::after{display:none}
+.stages li.gate::before{background:var(--pink);box-shadow:0 0 10px var(--pink)}
+.stages small{color:var(--muted);font-size:.72rem;margin-left:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-family:var(--mono);font-size:.76rem;padding:4px 11px;border-radius:99px;background:rgba(185,164,255,.1);border:1px solid var(--line)}
+ .cmp{display:flex;flex-direction:column;gap:10px}
+.cmp div{display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-family:var(--mono);font-size:.76rem}
+.cmp span{color:var(--muted)}.cmp b{color:var(--text);font-weight:600}
+.cmp i{grid-column:1 / -1;order:3;height:6px;border-radius:99px;background:var(--lav);opacity:.6}
+.cmp .win span{color:var(--mint)}.cmp .win i{background:var(--mint);opacity:1}
+.links{margin-top:auto;display:flex;gap:18px}
+.links a{font-weight:600;font-size:.9rem;color:var(--lav)}
+.links a:hover{color:var(--pink)}
+.proj .left{display:flex;flex-direction:column}
+.proj .left .tags{margin:6px 0 18px}
+
+.mini{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;background:var(--panel);border:1px dashed var(--line);border-radius:18px;padding:22px 26px}
+.mini h3{font-size:1.1rem}
+.mini p{color:var(--muted);font-size:.9rem;margin:4px 0 10px}
+.mini .date{font-family:var(--mono);font-size:.75rem;color:var(--mint)}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.group{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px}
+.group h3{font-size:1rem;margin-bottom:12px;color:var(--lav)}
+.group .tags span:hover{border-color:var(--pink);color:var(--pink)}
+.group.explore{border-style:dashed}
+.group.explore h3{color:var(--mint)}
+.group p{color:var(--muted);font-size:.85rem;margin-top:12px}
 
 /* about */
 .about{display:grid;grid-template-columns:1.3fr 1fr;gap:32px}
 .about p{color:var(--muted);margin-bottom:14px}
 .about p strong{color:var(--text)}
-.facts{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;font-family:var(--mono);font-size:.85rem;list-style:none}
+.facts{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;font-family:var(--mono);font-size:.85rem;list-style:none;align-self:start}
 .facts li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
 .facts li:last-child{border:0}.facts span{color:var(--muted)}.facts b{color:var(--pink);font-weight:600;text-align:right}
 
-/* skills */
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.group{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px}
-.group h3{font-size:1rem;margin-bottom:12px;color:var(--lav)}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tags span{font-family:var(--mono);font-size:.78rem;padding:5px 12px;border-radius:99px;background:rgba(185,164,255,.1);border:1px solid var(--line)}
-.tags span:hover{border-color:var(--pink);color:var(--pink)}
-
-/* learning */
-.learn{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.learn .group{border-style:dashed;transition:.25s}
-.learn .group:hover{border-color:var(--mint);transform:translateY(-4px)}
-.learn .group h3{color:var(--mint);display:flex;align-items:center;gap:8px}
-.learn .group h3::before{content:"$";font-family:var(--mono);color:var(--pink)}
-.learn .group p{color:var(--muted);font-size:.9rem;margin-bottom:14px}
-.goal{margin-top:24px;padding:18px 22px;border-radius:18px;border:1px solid var(--line);background:linear-gradient(100deg,rgba(255,143,199,.12),rgba(185,164,255,.1));font-size:.95rem;color:var(--muted)}
-.goal strong{color:var(--text)}
-
-/* projects */
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:28px;display:flex;flex-direction:column;position:relative;transition:.25s}
-.card:hover{transform:translateY(-6px);border-color:var(--pink);box-shadow:0 18px 50px rgba(255,143,199,.15)}
-.card .date{font-family:var(--mono);font-size:.75rem;color:var(--mint)}
-.card h3{font-size:1.3rem;margin:6px 0 4px}
-.card .kind{color:var(--pink);font-size:.88rem;margin-bottom:12px}
-.card ul{list-style:none;color:var(--muted);font-size:.92rem;margin-bottom:18px}
-.card li{padding-left:18px;position:relative;margin-bottom:6px}
-.card li::before{content:">";position:absolute;left:0;color:var(--pink);font-family:var(--mono)}
-.card .tags{margin-top:auto;margin-bottom:18px}
-.card .link{font-weight:600;font-size:.9rem;color:var(--lav)}
-.card .link:hover{color:var(--pink)}
-
 /* timeline */
 .tl{border-left:2px solid var(--line);margin-left:8px;padding-left:28px;position:relative}
-.tl .item{position:relative;margin-bottom:34px}
+.tl .item{position:relative;margin-bottom:32px}
 .tl .item::before{content:"";position:absolute;left:-37px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--pink);box-shadow:0 0 14px var(--pink)}
 .tl h3{font-size:1.1rem}.tl .meta{font-family:var(--mono);font-size:.78rem;color:var(--mint);margin:2px 0 10px}
 .tl p,.tl li{color:var(--muted);font-size:.93rem}
@@ -110,15 +131,17 @@ h1 em{font-style:normal;background:linear-gradient(100deg,var(--pink),var(--lav)
 
 /* contact */
 .contact{text-align:center;background:var(--panel);border:1px solid var(--line);border-radius:28px;padding:56px 24px;margin-bottom:40px}
-.contact h2{justify-content:center}.contact h2::after{display:none}
-.contact p{color:var(--muted);max-width:50ch;margin:0 auto 26px}
+.contact h2{margin-bottom:12px}
+.contact p{color:var(--muted);max-width:52ch;margin:0 auto 26px}
 .contact .btns{justify-content:center}
 footer{text-align:center;color:var(--muted);font-family:var(--mono);font-size:.78rem;padding:0 0 40px}
 
-@media(max-width:820px){
-  .hero .wrap,.about{grid-template-columns:1fr}
+@media(max-width:900px){
+  .hero .wrap,.about,.proj{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
   nav ul{display:none}
-  section{padding:52px 0}
+  section{padding:50px 0}
+  .mini{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -128,36 +151,138 @@ footer{text-align:center;color:var(--muted);font-family:var(--mono);font-size:.7
 <nav><div class="wrap">
   <a class="logo" href="#top">ruchita.dev</a>
   <ul>
-    <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
-    <li><a href="#learning">Learning</a></li>
-    <li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
   <div>
-    <div class="pill"><i></i>Open to work</div>
-    <h1>Hi, I'm <em>Ruchita</em>.  I turn data into models and insights.</h1>
-    <p class="sub">B.Tech CSE graduate from JUIT who builds with Python, SQL and machine learning, from messy datasets to working apps and dashboards.</p>
+    <div class="pill"><i></i>Open to ML and MLOps roles</div>
+    <h1>I build machine learning models and the <span class="grad">pipelines that ship them.</span></h1>
+    <p class="sub">I'm Ruchita, a B.Tech CSE graduate. I clean data, train and evaluate models with Python and Scikit-learn, then automate testing, security scanning, deployment and monitoring with Jenkins, GitHub Actions, Docker and AWS.</p>
     <div class="btns">
-      <a class="btn main" href="#projects">View my projects</a>
+      <a class="btn main" href="#projects">See my projects</a>
       <a class="btn ghost" href="#contact">Contact me</a>
     </div>
   </div>
   <div class="term" aria-hidden="true">
-    <div class="bar"><b></b><b></b><b></b><span>ruchita.py</span></div>
+    <div class="bar"><b></b><b></b><b></b><span>git push origin main</span></div>
     <pre id="code"></pre>
+  </div>
+</div>
+<div class="wrap statwrap">
+  <div class="stats">
+    <div class="stat"><b>2</b><span>ML projects with full CI/CD pipelines</span></div>
+    <div class="stat"><b>0.878</b><span>R&sup2; on the Mental Health Signal test set</span></div>
+    <div class="stat"><b>3</b><span>HIGH-severity CVEs found by Trivy and fixed</span></div>
+    <div class="stat"><b>0.35</b><span>MAE on a 0 to 10 score, so predictions land within about a third of a point</span></div>
   </div>
 </div></header>
 
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <p class="lead">Both projects cover the full ML lifecycle, from data and modeling to deployment. A push to <code style="font-family:var(--mono);color:var(--mint)">main</code> runs the checks, builds the images and deploys to AWS automatically.</p>
+  <div class="projects">
+
+    <article class="proj">
+      <div class="left">
+        <div class="date">Oct 2026</div>
+        <h3>Churn MLOps</h3>
+        <div class="kind">End-to-end ML pipeline with CI/CD</div>
+        <ul>
+          <li>A <strong>GitHub Actions</strong> pipeline lints, tests, <strong>retrains and validates the churn model</strong>, scans it and deploys it to <strong>AWS EC2</strong> on every push.</li>
+          <li>A <strong>model quality gate</strong> (minimum ROC AUC plus regression checks) blocks weaker models, and <strong>MLflow</strong> tracks every experiment.</li>
+          <li><strong>Trivy</strong> found three HIGH-severity vulnerabilities in a dependency; upgrading FastAPI fixed them.</li>
+          <li><strong>Prometheus</strong> metrics from the prediction API feed <strong>Grafana</strong> dashboards for API performance and prediction drift.</li>
+        </ul>
+        <div class="tags" style="margin-top:16px"><span>Python</span><span>FastAPI</span><span>MLflow</span><span>Docker</span><span>GitHub Actions</span><span>AWS EC2</span><span>Prometheus</span><span>Grafana</span></div>
+        <div class="links"><a href="https://github.com/ruchitasingla/churn-mlops" target="_blank" rel="noopener">View on GitHub</a></div>
+      </div>
+      <div class="side">
+        <h4>What runs on every push</h4>
+        <ul class="stages">
+          <li>Lint</li>
+          <li>Test</li>
+          <li>Retrain</li>
+          <li class="gate">Quality gate <small>blocks weaker models</small></li>
+          <li>Security scan <small>Trivy</small></li>
+          <li>Deploy <small>AWS EC2</small></li>
+          <li>Monitor <small>Prometheus + Grafana</small></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="left">
+        <div class="date">Aug 2025 - Oct 2025</div>
+        <h3>Mental Health Signal</h3>
+        <div class="kind">End-to-end MLOps project</div>
+        <ul>
+          <li>Explored a 5,000-record student dataset and trained a <strong>Random Forest regressor</strong> that predicts a mental health score (0 to 10) from 12 daily-habit features: <strong>R&sup2; 0.878, MAE 0.35</strong> on held-out data.</li>
+          <li>Built one <strong>Scikit-learn Pipeline</strong> (log transform and scaling for numbers, ordinal and one-hot encoding for categories) so training and serving use identical preprocessing.</li>
+          <li>Compared three models and noted the Random Forest overfits (train R&sup2; 0.98), which tuning reduced but did not improve on test data.</li>
+          <li>Served with <strong>FastAPI</strong> behind <strong>Nginx</strong> and packaged as Docker images with Docker Compose.</li>
+          <li>A <strong>Jenkins pipeline</strong> runs on every GitHub push and deploys to <strong>AWS EC2</strong>, then runs a smoke test against the live server.</li>
+          <li>Security scan findings were fixed, and containers run as non-root with Docker health checks.</li>
+        </ul>
+        <div class="tags" style="margin-top:16px"><span>Python</span><span>Scikit-learn</span><span>FastAPI</span><span>Docker</span><span>Jenkins</span><span>Trivy</span><span>AWS EC2</span><span>Nginx</span></div>
+        <div class="links"><a href="https://github.com/ruchitasingla/mental_health_recorder" target="_blank" rel="noopener">View on GitHub</a></div>
+      </div>
+      <div class="side">
+        <h4>Model comparison (test R&sup2;)</h4>
+        <div class="cmp">
+          <div><span>Linear Regression</span><i style="width:74%"></i><b>0.740</b></div>
+          <div><span>Random Forest, tuned</span><i style="width:86.5%"></i><b>0.865</b></div>
+          <div class="win"><span>Random Forest, deployed</span><i style="width:87.8%"></i><b>0.878</b></div>
+        </div>
+        <h4>What runs on every push</h4>
+        <ul class="stages">
+          <li>Lint <small>ruff</small></li>
+          <li>Test <small>pytest</small></li>
+          <li>Build images <small>docker compose</small></li>
+          <li class="gate">Security scan <small>Trivy fails on HIGH / CRITICAL</small></li>
+          <li>Push <small>Docker Hub</small></li>
+          <li>Deploy <small>AWS EC2 over SSH</small></li>
+          <li>Smoke test <small>/health</small></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="mini">
+      <div>
+        <div class="date">Mar 2026 - Apr 2026</div>
+        <h3>Customer Behavior Analysis</h3>
+        <p>End-to-end analytics workflow that turns raw customer data into insights on purchasing behavior, segments and loyalty, with SQL analysis and a Power BI dashboard.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>PostgreSQL</span><span>Power BI</span></div>
+      </div>
+      <div class="links"><a href="https://github.com/ruchitasingla/Customer_behavior_analysis" target="_blank" rel="noopener">View on GitHub</a></div>
+    </article>
+
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <p class="lead">The tools I have used in my projects, plus the ones I'm learning next.</p>
+  <div class="skills">
+    <div class="group"><h3>Machine learning</h3><div class="tags"><span>Python</span><span>Scikit-learn</span><span>Regression</span><span>Classification</span><span>Feature engineering</span><span>Model evaluation</span><span>Random Forest</span></div></div>
+    <div class="group"><h3>Data analysis</h3><div class="tags"><span>Pandas</span><span>NumPy</span><span>EDA</span><span>SQL</span><span>PostgreSQL</span><span>Power BI</span><span>Jupyter</span></div></div>
+    <div class="group"><h3>MLOps and DevOps</h3><div class="tags"><span>Jenkins</span><span>GitHub Actions</span><span>Docker</span><span>MLflow</span><span>Trivy</span><span>Git</span><span>GitHub</span></div></div>
+    <div class="group"><h3>Cloud and backend</h3><div class="tags"><span>AWS EC2</span><span>Linux</span><span>FastAPI</span><span>Nginx</span><span>pytest</span></div></div>
+    <div class="group"><h3>Monitoring</h3><div class="tags"><span>Prometheus</span><span>Grafana</span></div></div>
+    <div class="group explore"><h3>Learning next</h3><div class="tags"><span>Kubernetes</span><span>Terraform</span></div><p>Orchestrating containers and defining cloud infrastructure as code.</p></div>
+  </div>
+  </div></section>
+
 <section id="about"><div class="wrap">
-  <h2><span>&lt;/&gt;</span>About me</h2>
+  <h2>About me</h2>
   <div class="about">
     <div>
-      <p>I learn by building. I like experimenting with datasets, training models, writing SQL queries and turning ideas into <strong>small working projects</strong>.</p>
-      <p>During my <strong>Machine Learning internship</strong> I cleaned data, ran exploratory analysis and built regression and classification models with Scikit-learn. My projects cover a <strong>prediction app</strong> and an <strong>end-to-end analytics workflow</strong> with Python, PostgreSQL and Power BI.</p>
-      <p>I'm now looking for roles in machine learning, data analytics and Python development.</p>
+      <p>I enjoy the whole life of a machine learning model: <strong>exploring the data, engineering features, training and evaluating models</strong>, and then making them testable, secure, deployable and observable.</p>
+      <p>I started in data and ML. During my <strong>Machine Learning internship</strong> I cleaned data and built regression and classification models with Scikit-learn. I then added the delivery side, building pipelines that check, containerize and deploy models without manual steps.</p>
+      <p>I'm now looking for a <strong>machine learning or MLOps engineer</strong> role where I can build models and keep them running reliably.</p>
     </div>
     <ul class="facts">
       <li><span>education</span><b>B.Tech CSE, JUIT</b></li>
@@ -169,92 +294,28 @@ footer{text-align:center;color:var(--muted);font-family:var(--mono);font-size:.7
   </div>
 </div></section>
 
-<section id="skills"><div class="wrap">
-  <h2><span>{}</span>Skills</h2>
-  <div class="skills">
-    <div class="group"><h3>Languages</h3><div class="tags"><span>Python</span><span>SQL</span><span>C/C++</span></div></div>
-    <div class="group"><h3>Machine learning</h3><div class="tags"><span>Scikit-learn</span><span>Regression</span><span>Classification</span><span>Feature engineering</span><span>Model evaluation</span></div></div>
-    <div class="group"><h3>Data analysis</h3><div class="tags"><span>Pandas</span><span>NumPy</span><span>EDA</span><span>PostgreSQL</span><span>Power BI</span></div></div>
-    <div class="group"><h3>Tools</h3><div class="tags"><span>Jupyter</span><span>Git</span><span>GitHub</span><span>VS Code</span></div></div>
-  </div>
-</div></section>
-
-<section id="learning"><div class="wrap">
-  <h2><span>&gt;_</span>Currently learning</h2>
-  <div class="learn">
-    <div class="group">
-      <h3>CI/CD and automation</h3>
-      <p>Automating build, test and deploy steps so every code change is checked and shipped without manual work.</p>
-      <div class="tags"><span>Jenkins</span><span>GitHub Actions</span><span>Pipelines</span></div>
-    </div>
-    <div class="group">
-      <h3>Containers</h3>
-      <p>Packaging apps and ML models with their dependencies so they run the same on any machine.</p>
-      <div class="tags"><span>Docker</span><span>Dockerfile</span><span>Images</span></div>
-    </div>
-    <div class="group">
-      <h3>Infrastructure as code</h3>
-      <p>Defining servers and cloud resources in code so environments can be created and repeated reliably.</p>
-      <div class="tags"><span>Terraform</span><span>Version control</span></div>
-    </div>
-  </div>
-  <div class="goal"><strong>Why it matters:</strong> I want to bring these practices into my ML and data projects, so models and dashboards can be tested, containerized and deployed automatically.</div>
-</div></section>
-
-<section id="projects"><div class="wrap">
-  <h2><span>#</span>Projects</h2>
-  <div class="projects">
-    <article class="card">
-      <div class="date">Aug 2025 - Oct 2025</div>
-      <h3>Mental Health Score Predictor</h3>
-      <div class="kind">Machine learning application</div>
-      <ul>
-        <li>Predicts mental health scores from lifestyle and behavioral inputs.</li>
-        <li>Covers preprocessing, EDA, feature preparation and model training with Scikit-learn.</li>
-        <li>Web interface that returns predictions from user inputs.</li>
-      </ul>
-      <div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>HTML/CSS/JS</span></div>
-      <a class="link" href="https://github.com/ruchitasingla/mental_health_recorder" target="_blank" rel="noopener">View on GitHub</a>
-    </article>
-    <article class="card">
-      <div class="date">Mar 2026 - Apr 2026</div>
-      <h3>Customer Behavior Analysis</h3>
-      <div class="kind">Data analytics project</div>
-      <ul>
-        <li>Analyzes transaction data to find purchasing patterns and customer segments.</li>
-        <li>SQL queries on purchase frequency, loyalty and behavioral trends.</li>
-        <li>Interactive Power BI dashboard for data-driven decisions.</li>
-      </ul>
-      <div class="tags"><span>Python</span><span>Pandas</span><span>PostgreSQL</span><span>Power BI</span></div>
-      <a class="link" href="https://github.com/ruchitasingla/Customer_behavior_analysis" target="_blank" rel="noopener">View on GitHub</a>
-    </article>
-  </div>
-</div></section>
-
 <section id="experience"><div class="wrap">
-  <h2><span>~/</span>Experience and education</h2>
-  <div class="tl">
+  <h2>Experience and education</h2>
+  <div class="tl" style="margin-top:28px">
     <div class="item">
       <h3>Machine Learning Intern, Yhills Edutech Pvt. Ltd.</h3>
       <div class="meta">Jun 2025 - Jul 2025 | Remote</div>
       <ul>
-        <li>Cleaned and transformed datasets with Python and Pandas.</li>
-        <li>Ran exploratory data analysis and feature preprocessing.</li>
-        <li>Built and evaluated regression and classification models with Scikit-learn.</li>
+        <li>Built data cleaning and preprocessing workflows in Python and Pandas.</li>
+        <li>Trained and evaluated regression and classification models with Scikit-learn.</li>
       </ul>
     </div>
     <div class="item">
       <h3>B.Tech, Computer Science and Engineering</h3>
       <div class="meta">Aug 2022 - Jun 2026 | Jaypee University of Information Technology | CGPA 7.7</div>
-      <p>Coursework: Machine Learning, DBMS, OOPS, DSA, Computer Networks.</p>
+      <p>Coursework: Machine Learning, Operating Systems, Computer Networks, DBMS, DSA, OOPS.</p>
     </div>
     <div class="item">
       <h3>Certifications</h3>
-      <div class="meta">Google Analytics (Skillshop), Sep 2026 | Web Development (Udemy), Nov 2025</div>
+      <div class="meta">Google Analytics (Skillshop), Sep 2026</div>
     </div>
     <div class="item">
-      <h3>Leadership</h3>
-      <div class="meta">JUIT</div>
+      <h3>Leadership at JUIT</h3>
       <p>Coordinator, Disciplinary Committee (Aug 2024 - May 2025). Design Manager, TIEDC Cell (Oct 2024 - Dec 2024).</p>
     </div>
   </div>
@@ -262,8 +323,8 @@ footer{text-align:center;color:var(--muted);font-family:var(--mono);font-size:.7
 
 <section id="contact"><div class="wrap">
   <div class="contact">
-    <h2>Let's work together</h2>
-    <p>I'm open to internships and full-time roles in machine learning, data analytics and Python development. Send me a message.</p>
+    <h2>Let's build something that works</h2>
+    <p>I'm open to machine learning and MLOps roles, internships and full-time. Send me a message and I'll reply soon.</p>
     <div class="btns">
       <a class="btn main" href="mailto:ruchitasingla001@gmail.com">Email me</a>
       <a class="btn ghost" href="https://www.linkedin.com/in/ruchita-singla/" target="_blank" rel="noopener">LinkedIn</a>
@@ -277,20 +338,22 @@ footer{text-align:center;color:var(--muted);font-family:var(--mono);font-size:.7
 document.getElementById('yr').textContent=new Date().getFullYear();
 const el=document.getElementById('code');
 const lines=[
- '<span class="k">class</span> <span class="f">Ruchita</span>:',
- '    role   = <span class="s">"ML &amp; Data Analytics"</span>',
- '    stack  = [<span class="s">"Python"</span>, <span class="s">"SQL"</span>,',
- '              <span class="s">"Scikit-learn"</span>, <span class="s">"Power BI"</span>]',
- '    status = <span class="s">"open_to_work"</span>',
+ '<span class="c">$</span> git push origin main',
  '',
- '<span class="c"># hire her :)</span>',
- '<span class="f">print</span>(Ruchita.status)'
+ '<span class="s">&#10003;</span> lint',
+ '<span class="s">&#10003;</span> test',
+ '<span class="s">&#10003;</span> build  <span class="c">docker images</span>',
+ '<span class="s">&#10003;</span> scan   <span class="c">trivy</span>',
+ '<span class="s">&#10003;</span> push   <span class="c">docker hub</span>',
+ '<span class="s">&#10003;</span> deploy <span class="c">aws ec2</span>',
+ '<span class="s">&#10003;</span> smoke  <span class="c">/health</span>',
+ '',
+ '<span class="f">pipeline passed</span>'
 ];
 const full=lines.join('\n');
 if(matchMedia('(prefers-reduced-motion: reduce)').matches){
   el.innerHTML=full;
 }else{
-  // type character by character, keeping HTML tags intact
   let i=0,out='';
   (function tick(){
     if(i>=full.length){el.innerHTML=out+'<span class="caret"></span>';return;}
@@ -298,7 +361,7 @@ if(matchMedia('(prefers-reduced-motion: reduce)').matches){
     else if(full[i]==='&'){const j=full.indexOf(';',i);out+=full.slice(i,j+1);i=j+1;}
     else{out+=full[i++];}
     el.innerHTML=out+'<span class="caret"></span>';
-    setTimeout(tick,22);
+    setTimeout(tick,18);
   })();
 }
 </script>
